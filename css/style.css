@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+	
+	font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 0; 
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #002855;
+  font-size: 20px;
+  font-weight: 500;
+	text-align: center;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+
+
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  color: white;
+}
+
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url( "../img/travel-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  z-index: 1;
+}
+
+.contenido {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 4rem;
+  text-align: left;
+  max-width: 600px;
+}
+
+.contenido h1 {
+ font-size: 150px;
+text-align: left;
+padding: 20px 10px;
+}
+
+.contenido h1 span {
+  font-weight: 300;
+}
+
+.contenido h1 strong {
+  font-weight: 800;
+  display: block;
+  font-size: 150px;
+}
+
+.contenido p {
+  text-align: left;
+  font-size: 30px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.9rem;
+
+}
+
+ .benefits {
+      background-color: #002B5C;
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      color: white;
+      text-align: center;
+    }
+    .benefit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .benefit-item img {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 70%;
+      padding: 10px;
+    }
+    .benefit-item h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+    .benefit-item p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+.paquetes {
+  background-image:url("../img/travel-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 60px;
+}
+
+.paquetes::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.paquetes-contenido {
+  position: relative;
+  z-index: 2;
+}
+
+.paquetes h1 {
+  font-size: 7em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.paquetes h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.5em;
+  font-weight: lighter;
+}
+
+.paquetes .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background-color: #1a2a6c;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 2em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+}
+
+.paquetes .btn:hover {
+  background-color: #3f51b5;
+  transform: scale(1.05);
+}
+.ofertas {
+  background-color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.ofertas h1 {
+  color: #1a2a6c;
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-weight: bold; 
+}
+
+.formulario-contenedor {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.formulario {
+  flex: 0 0 400px;
+  margin-top: 60px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campos {
+  display: flex;
+  gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 12px;
+  border: none;
+  background-color: #f4f4f4;
+  font-size: 1em;
+  width: 100%;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 100px;
+}
+
+.formulario button {
+  background-color: #1a2a6c;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #3f51b5;
+  transform: scale(1.03);
+}
+
+.icono-avion img {
+  width: 450px;
+  display: block;
+  align-content: center;
+	text-align: center;
+}
+
+#visita{
+	padding: 100px 100px;
+	text-align: center;
+}
+
+#visita h2{
+	font-size: 60px;
+	margin-bottom: 30px;
+	color: #042e65;
+	font-weight: 600;
+}
+
+#visita h3{
+	font-size: 34px;
+	margin-bottom: 50px;
+	font-weight: 300;
+	color: #042e65;
+}
+
+#visita h4{
+	font-weight: 600;
+	font-size: 46px;
+}
+
+#visita h5{
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.carousel-caption h5 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.testimonios {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.testimonial {
+  background-color: #f4f4f4;
+  padding: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.icono {
+  font-size: 24px;
+  color: #002d5d;
+  margin-right: 10px;
+}
+
+.derecha {
+  float: right;
+  margin-left: 10px;
+}
+
+.quote {
+  font-style: italic;
+  margin: 10px 0;
+  color: #002d5d;
+}
+
+.autor {
+  font-weight: bold;
+  color: #002d5d;
+  display: block; 
+  margin-top: 10px;
+}
+
+
+.estrellas i {
+  color: #f9b233;
+  margin-left: 4px;
+}
+
+
+
+.footer {
+  background-color: #002855;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(footer) {
+  flex: 1;
+}
+
+
+.footer .logo img {
+  height: 100px;
+}
+
+
+.center-text {
+  text-align: center;
+  flex: 1;
+  font-size: 30px;
+}
+
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 40px;
+  color: white;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #1da1f2; 
+}
+
+@media (max-width: 768px) {
+  .contenido {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  #hero {
+    justify-content: center;
+  }
+}
